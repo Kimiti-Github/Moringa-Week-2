@@ -13,6 +13,35 @@
                 <h1>Akan Names Generator</h1>
                 <p>Good pips! A web app that takes in your birthday details i.e date,day and gender then outputs an Akan Name</p>
                 <p>Fill the form below to get your Akan name</p>
+                <form class="myform" onsubmit="return getAkanName()">
+                    <label for="year-of-birth">
+                        Year:
+                        <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+                    </label>
+                    <label for="month-of-birth">
+                        Month:
+                        <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+                    </label>
+                    <label for="day-of-birth">
+                        Day:
+                        <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+                    </label>
+                    <br>
+                    <label for="gender">
+                        <p>Select your gender: </p>
+                        Male
+                        <input id="male-input" type="radio" name="gender" value="male" required>
+                        Female
+                        <input id="female-input" type="radio" name="gender" value="female" required>
+                
+                    </label>
+                    <br><br>
+                    <input id="get-name" type="submit" name="" value="Generate name">
+                    <br><br>
+                </form>
+                <form onsubmit="return clearInput()">
+                    <input class="clear" type="submit" value="Clear input">
+                </form>
             </div>
         </div>
 
